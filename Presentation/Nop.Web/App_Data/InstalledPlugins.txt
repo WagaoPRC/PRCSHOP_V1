@@ -1,0 +1,4 @@
+Payments.CheckMoneyOrder
+Payments.PagSeguro
+Widgets.Selenium
+Shipping.Correios

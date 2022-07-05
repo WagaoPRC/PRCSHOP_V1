@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "";
+}
+@model Nop.Plugin.Payments.BankDeposit.Models.ConfigurationModel
+@using Nop.Web.Framework;
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <table class="adminContent">
+        <tr>
+            <td class="adminTitle">
+               <label>Informações</label>:
+            </td>
+            <td class="adminData">
+                <p>Se o cliente optar por esta forma de pagamento a compra será finalizada com status Pendente.</p>
+                <p>Após o cliente confirmar o pagamento você deverá editar o pedido e informar que o pagamento foi realizado.</p>
+                <p>Você poderá usar HTML no campo descrição para exibir as informações sobre qual a conta bancária o Deposito deve ser realizado</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.DescriptionText):
+            </td>
+            <td class="adminData">
+                @Html.TextAreaFor(model => Model.DescriptionText, new { style = "Width: 550px; Height: 350px;" })
+                @Html.ValidationMessageFor(model => model.DescriptionText)
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.AdditionalFee):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.AdditionalFee)
+                @Html.ValidationMessageFor(model => model.AdditionalFee)
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.AdditionalFeePercentage):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.AdditionalFeePercentage)
+                @Html.ValidationMessageFor(model => model.AdditionalFeePercentage)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" name="save" class="k-button" value="@T("Admin.Common.Save")" />
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <p>Contato: admin.jr.dotnet@gmail.com</p>
+    
+}

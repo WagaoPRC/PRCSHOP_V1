@@ -1,0 +1,8 @@
+Group: Payment methods
+FriendlyName: PagSeguro
+SystemName: Payments.PagSeguro
+Version: 1.0
+SupportedVersions: 3.70
+Author: José Luiz - Isco Sistemas
+DisplayOrder: 1
+FileName: Nop.Plugin.Payments.PagSeguro.dll

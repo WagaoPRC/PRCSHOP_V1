@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="NcardModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'PRCShop.dbo.Ncards' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Ncards">
+          <Property Name="Nid" Type="text" />
+          <Property Name="Nname" Type="text" />
+          <Property Name="Nset" Type="text" />
+          <Property Name="Ntype" Type="text" />
+          <Property Name="Nrarity" Type="text" />
+          <Property Name="Nmanacost" Type="text" />
+          <Property Name="Nconverted_manacost" Type="text" />
+          <Property Name="Npower" Type="text" />
+          <Property Name="Ntoughness" Type="text" />
+          <Property Name="Nloyalty" Type="text" />
+          <Property Name="Nability" Type="text" />
+          <Property Name="Nflavor" Type="text" />
+          <Property Name="Nvariation" Type="text" />
+          <Property Name="Nartist" Type="text" />
+          <Property Name="Nnumber" Type="text" />
+          <Property Name="Nrating" Type="text" />
+          <Property Name="Nruling" Type="text" />
+          <Property Name="Ncolor" Type="text" />
+          <Property Name="Ngenerated_mana" Type="text" />
+          <Property Name="Npricing_low" Type="text" />
+          <Property Name="Npricing_mid" Type="text" />
+          <Property Name="Npricing_high" Type="text" />
+          <Property Name="Nback_id" Type="text" />
+          <Property Name="Nwatermark" Type="text" />
+          <Property Name="Nprint_number" Type="text" />
+          <Property Name="Nis_original" Type="text" />
+          <Property Name="Nname_CN" Type="text" />
+          <Property Name="Nname_TW" Type="text" />
+          <Property Name="Nname_FR" Type="text" />
+          <Property Name="Nname_DE" Type="text" />
+          <Property Name="Nname_IT" Type="text" />
+          <Property Name="Nname_JP" Type="text" />
+          <Property Name="Nname_PT" Type="text" />
+          <Property Name="Nname_RU" Type="text" />
+          <Property Name="Nname_ES" Type="text" />
+          <Property Name="Nname_KO" Type="text" />
+          <Property Name="Ntype_CN" Type="text" />
+          <Property Name="Ntype_TW" Type="text" />
+          <Property Name="Ntype_FR" Type="text" />
+          <Property Name="Ntype_DE" Type="text" />
+          <Property Name="Ntype_IT" Type="text" />
+          <Property Name="Ntype_JP" Type="text" />
+          <Property Name="Ntype_PT" Type="text" />
+          <Property Name="Ntype_RU" Type="text" />
+          <Property Name="Ntype_ES" Type="text" />
+          <Property Name="Ntype_KO" Type="text" />
+          <Property Name="Nability_CN" Type="text" />
+          <Property Name="Nability_TW" Type="text" />
+          <Property Name="Nability_FR" Type="text" />
+          <Property Name="Nability_DE" Type="text" />
+          <Property Name="Nability_IT" Type="text" />
+          <Property Name="Nability_JP" Type="text" />
+          <Property Name="Nability_PT" Type="text" />
+          <Property Name="Nability_RU" Type="text" />
+          <Property Name="Nability_ES" Type="text" />
+          <Property Name="Nability_KO" Type="text" />
+          <Property Name="Nflavor_CN" Type="text" />
+          <Property Name="Nflavor_TW" Type="text" />
+          <Property Name="Nflavor_FR" Type="text" />
+          <Property Name="Nflavor_DE" Type="text" />
+          <Property Name="Nflavor_IT" Type="text" />
+          <Property Name="Nflavor_JP" Type="text" />
+          <Property Name="Nflavor_PT" Type="text" />
+          <Property Name="Nflavor_RU" Type="text" />
+          <Property Name="Nflavor_ES" Type="text" />
+          <Property Name="Nflavor_KO" Type="text" />
+          <Property Name="Nlegality_Block" Type="text" />
+          <Property Name="Nlegality_Standard" Type="text" />
+          <Property Name="Nlegality_Modern" Type="text" />
+          <Property Name="Nlegality_Legacy" Type="text" />
+          <Property Name="Nlegality_Vintage" Type="text" />
+          <Property Name="Nlegality_Highlander" Type="text" />
+          <Property Name="Nlegality_French_Commander" Type="text" />
+          <Property Name="Nlegality_Tiny_Leaders_Commander" Type="text" />
+          <Property Name="Nlegality_Commander" Type="text" />
+          <Property Name="Nlegality_Peasant" Type="text" />
+          <Property Name="Nlegality_Pauper" Type="text" />
+        </EntityType>-->
+        <EntityContainer Name="NcardModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NcardModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="PRCShopEntities" annotation:LazyLoadingEnabled="true" />
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NcardModelStoreContainer" CdmEntityContainer="PRCShopEntities" />
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

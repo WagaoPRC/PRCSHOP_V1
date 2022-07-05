@@ -1,0 +1,8 @@
+Group: Payment methods
+FriendlyName: Deposito em conta bancária
+SystemName: Payments.BankDeposit
+Version: 1.00
+SupportedVersions: 3.60
+Author: mjunior
+DisplayOrder: 2
+FileName: Nop.Plugin.Payments.BankDeposit.dll

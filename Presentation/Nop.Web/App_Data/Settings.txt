@@ -1,0 +1,3 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=SQL5025.Smarterasp.net;Initial Catalog=db_a0abcd_prcshop_1;Integrated Security=False;Persist Security Info=False;User ID=DB_a0abcd_prcshop_1_admin;Password=banco098
+

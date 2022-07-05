@@ -1,0 +1,8 @@
+﻿Group: Widgets
+FriendlyName: Selenium
+SystemName: Widgets.Selenium
+Version: 1.1
+SupportedVersions: 3.70
+Author: WagnerPRC
+DisplayOrder: 1
+FileName: Nop.Plugin.Widgets.Selenium.dll
